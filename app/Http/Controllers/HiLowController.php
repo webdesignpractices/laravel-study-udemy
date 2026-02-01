@@ -16,7 +16,7 @@ class HiLowController extends Controller
 
 public function result(Request $request) {
     // ディーラーの数字(sessionに保存されたもの)を取得
-    $dealersNumber = session()->get('dealersNumber');
+    $dealersNumber = session()->get('dealersNumber');//session('dealersNumber')でも可
 
     // プレイヤーの数字を1~12の中からランダムに取得
     $playersNumber = random_int(1, 12);
