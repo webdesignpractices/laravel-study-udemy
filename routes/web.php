@@ -41,5 +41,5 @@ Route::get('/route-link',[RequestSampleController::class,'routeLink']);
 Route::get('/login',[RequestSampleController::class,'loginForm']);
 Route::post('/login',[RequestSampleController::class,'login'])->name('login');
 
-Route::resource('/event',EventController::class)->only(['index','create','store']);
+Route::resource('/events',EventController::class)->only(['create','store']);
 
